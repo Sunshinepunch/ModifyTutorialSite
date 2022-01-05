@@ -3,9 +3,61 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> 
+          let i = 0;
+          function buttonClick() {
+          document.getElementById('inc').value = ++i;
+          }
+          function buttonDecrement(){
+            document.getElementById('inc').value =--i;
+          }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Modify This DOM!</title>
   </head>
   <body>
-    <script type="module" src="/js/index.js"></script>
+    <img src="./img/404-error-not-found-blackboard-1024x341.jpg" class="blackboard-image">
+    <h1>Welcome to a tutorial site where you can make multiple changes to the DOM via JS functions</h1>
+    <h2>This handy little site will help anyone wanting to see basic dom interactions in action.</h2>
+    <h3>If you follow along with the Readme file included with github, you can build something yourself for practice!</h3>
+    <h4>List of Modifications</h4>
+    <div id="list">
+      <ol>
+        <li>Input field to update a text box</li>
+        <li>Click on an image to open a browser page to a different URL</li>
+        <li>Click a button to increment a counter</li>
+      </ol>
+   </div>
+     <div class="column">
+       <strong>Top of Column</strong>
+       <div class ="row">
+        First Row
+       </div>
+       <div class="row">
+         Second Row
+       </div>
+       <br>
+       <div class="clickFunction">
+        <strong>Increment Box</strong>
+        <button onclick="buttonClick()">Add</button>
+        <button onclick="buttonDecrement()">Subtract</button>
+        <input type="text" id="inc" value="0" disabled></input>
+       </div>
+     </div>
+     <div class="col2">
+       <strong>Second Column</strong>
+       <div class ="row">
+         Third Row
+       </div>
+       <div class ="row">
+         Fourth Row
+       </div>
+       <div class=inputBox>
+        <input type="text" value="Write Something">
+       </div>
+       <button type="submit">Refresh</button>
+     </div>
+    
   </body>
 </html>
+

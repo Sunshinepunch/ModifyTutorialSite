@@ -1,0 +1,46 @@
+html {
+  background-image: linear-gradient(to bottom right, aquamarine, cornsilk);
+  min-height: 100%;
+}
+
+h1,h2,h3,h4 {
+  text-align: center;
+}
+
+h2{
+  font-style: italic;
+}
+
+
+
+#list {
+  width:250px;
+  margin:0 auto;
+  text-align:left;
+}
+
+.column {
+  width: auto;
+  float: left;
+  border: 2px solid green;
+  margin-left: 10px;
+}
+
+.col2 {
+  width: auto;
+  float: right;
+  border: 2px solid yellow;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.clickFunction{
+  float: left;
+}
+
+.blackboard-image {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
